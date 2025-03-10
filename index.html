@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marko Srbakov</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" />
+        <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+        <script>
+            function toggleTheme() {
+                const body = document.body;
+                if (body.classList.contains('dark-mode')) {
+                    body.classList.remove('dark-mode');
+                    body.classList.add('light-mode');
+                } else {
+                    body.classList.remove('light-mode');
+                    body.classList.add('dark-mode');
+                }
+            }
+         
+            document.querySelectorAll('.project-card').forEach(card => {
+                card.addEventListener('mouseover', () => {
+                    card.querySelector('.eye-icon').style.transition = 'opacity 0.3s ease-in-out';
+                });
+                card.addEventListener('mouseout', () => {
+                    card.querySelector('.eye-icon').style.transition = 'opacity 0.3s ease-in-out';
+                });
+            });
+           
+            document.querySelectorAll('.skill').forEach(skill => {
+                skill.addEventListener('mouseover', () => {
+                    skill.querySelector('i').style.boxShadow = '0 0 20px #00ff00';
+                });
+                skill.addEventListener('mouseout', () => {
+                    skill.querySelector('i').style.boxShadow = 'none';
+                });
+            });
+          
+            document.querySelectorAll('.project-card').forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.querySelector('.eye-icon').style.opacity = '1';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.querySelector('.eye-icon').style.opacity = '0';
+                });
+            });
+            
+            document.addEventListener('DOMContentLoaded', function() {
+                AOS.init();
+            });
+        </script>
+        
+<body>
+    <nav class="navbar navbar-expand-lg" style="background: none;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <span class="navbar-brand-divider">|</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item"><a class="nav-link" href="#skills"><b>Skills</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects"><b>Projects</b></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><b>Contact</b></a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a onclick="toggleTheme()" class="nav-link" href="#moon"><b><i class="fa-solid fa-moon"></i></b></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+   <section class="hero-section d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <!-- Лева страна (Heading + Contact Me копче) -->
+            <div class="col-md-6 text-center text-md-start">
+                <h1 class="fw-bold">Hello, I am</h1>
+                <h2 class="text-primary fw-bold">Marko Srbakov</h2>
+                <p class="lead">Full-Stack Developer</p>
+                <a href="#contact" class="btn btn-primary mt-3 custom-btn">Contact Me</a>
+
+            </div>
+            <!-- Десна страна (About Me) -->
+            <div class="col-md-6">
+                <div class="about-box p-4 shadow-lg">
+                    <h3>About Me</h3>
+                    <p>Motivated final-year student with hands-on experience in Django through academic projects and a solid foundation in Spring Boot. Passionate about learning and applying new technologies to develop efficient and user-friendly applications. Strong problem-solving mindset and a collaborative approach, eager to contribute to innovative projects and grow in the field of software development.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-aos="fade-up" id="projects" class="container text-center my-5">
+    <h2>Projects</h2>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card project-card">
+                <div class="image-container">
+                    <img src="media/galactic.PNG" class="card-img-top" alt="Project Image">
+                    <a href="https://galactic-caffe.vercel.app/" class="eye-icon"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Galactic Caffe</h5>
+                    <p class="card-text">Dynamic Web Page for Coffee Bar. With Menu items, Gallery and Event Manager</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card project-card">
+                <div class="image-container">
+                    <img src="media/epoxy.PNG" class="card-img-top" alt="Project Image">
+                    <a href="https://www.epoxy-ristov.at/" class="eye-icon"><i class="fa-solid fa-eye"></i></a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Epoxy Ristov</h5>
+                    <p class="card-text">Web Page for Business based in Austria. With Categories and Contact form</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <section data-aos="fade-up" id="skills" class="container text-center my-5">
+        <h2>Skills</h2>
+        <div class="row mt-4">
+            <div class="col-md-3 col-sm-6 skill"><i class="fa-brands fa-python"></i><p>Django</p></div>
+            <div class="col-md-3 col-sm-6 skill"><i class="fa-brands fa-java"></i><p>Spring</p></div>
+            <div class="col-md-3 col-sm-6 skill"><i class="fa-brands fa-bootstrap"></i><p>Bootstrap</p></div>
+            <div class="col-md-3 col-sm-6 skill"><i class="fa-brands fa-html5"></i><p>HTML</p></div>
+            <div class="col-md-3 col-sm-6 skill"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
+            <div class="col-md-3 col-sm-6 skill"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
+            <div class="col-md-3 col-sm-6 skill"><i class="fa-brands fa-react"></i><p>React</p></div>
+            <div class="col-md-3 col-sm-6 skill"><i class="fa-solid fa-database"></i><p>PostgreSQL</p></div>
+        </div>
+    </section>
+
+    
+
+        <section data-aos="fade-up" id="contact" class="container my-5">
+    <h2 class="text-center">Contact Me</h2>
+    <div class="row">
+        <div class="col-md-6 text-md-left contact-info">
+            <div class="contact-item my-2">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:srbakovmarko@gmail.com">srbakovmarko@gmail.com</a>
+            </div>
+            <div class="contact-item my-2">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+38971844880">+389 71 844 880</a>
+            </div>
+            <div class="contact-item my-2">
+                <i class="fa-brands fa-instagram"></i>
+                <p><a href="https://instagram.com/dj.marsabb" target="_blank">Instagram</a></p>
+            </div>
+            <div class="contact-item my-2">
+                <i class="fa-brands fa-linkedin"></i>
+                <p><a href="https://mk.linkedin.com/in/marko-srbakov-a65b43235" target="_blank">LinkedIn</a></p>
+            </div>
+            <div class="contact-item my-2">
+                <i class="fa-brands fa-github"></i>
+                <p><a href="http://github.com/markosrbakov/" target="_blank">GitHub</a></p>
+            </div>
+        </div>
+        <div data-aos="fade-up" class="col-md-6">
+            <form action="https://formspree.io/f/moveqjbz" method="POST" class="w-100">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="surname" class="form-label">Your Surname</label>
+                  <input type="text" class="form-control" id="surname" name="surname" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+              
+        </div>
+    </div>
+</section>
+
+    
+    <footer class="text-center py-3">
+        <p>&copy; 2025 Marko Srbakov. All rights reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+
+</html>
