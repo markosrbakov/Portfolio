@@ -6,7 +6,7 @@
         <title>Marko Srbakov</title>
         <link rel="icon" href="media/logo.png" type="image/png">
         <meta name="description" content="Full-stack developer portfolio showcasing my skills and projects.">
-        <meta name="keywords" content="Marko Srbakov, marko srbakov, srbakov, radovis, radovish, Full Stack Developer, Django, Spring Boot, Bootstrap, HTML, CSS, JavaScript, React, PostgreSQL">
+        <meta name="keywords" content="Marko Srbakov, Full Stack Developer, Django, Spring Boot, Bootstrap, HTML, CSS, JavaScript, React, PostgreSQL">
         <meta name="author" content="Marko Srbakov">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" />
         <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
         <script>
+            
             function toggleTheme() {
                 const body = document.body;
                 if (body.classList.contains('dark-mode')) {
@@ -60,7 +61,6 @@
         </script>
         
 <body>
-    
     <nav class="navbar navbar-expand-lg" style="background: none;">
         <div class="container d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="index.html" style="display: flex; align-items: center;">
@@ -91,9 +91,6 @@
             </div>
         </div>
     </nav>
-    
-    
-    
 
    <section class="hero-section d-flex align-items-center">
     <div class="container">
@@ -111,6 +108,12 @@
                 <div class="about-box p-4 shadow-lg">
                     <h3>About Me</h3>
                     <p>Motivated final-year student with hands-on experience in Django through academic projects and a solid foundation in Spring Boot. Passionate about learning and applying new technologies to develop efficient and user-friendly applications. Strong problem-solving mindset and a collaborative approach, eager to contribute to innovative projects and grow in the field of software development.</p>
+                    
+                    <div class="programming-languages">
+                        <h4>Programming Languages:</h3>
+                        <img src="media/svg/java.svg" alt="Java" class="language-icon">
+                        <img src="media/svg/python.svg" alt="Python" class="language-icon">
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,8 +121,109 @@
 </section>
 
 
+<section data-aos="fade-up" id="offers">
+<div class="container px-4 py-5" id="hanging-icons" bis_skin_checked="1">
+    <h2 class="pb-2 border-bottom text-center">Services</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3" bis_skin_checked="1">
+      <div class="col d-flex align-items-start" bis_skin_checked="1">
+        <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3" bis_skin_checked="1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+                <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z"/>
+            </svg>
+        </div>
+        
+        <div bis_skin_checked="1">
+          <h3 class="fs-2 text-body-emphasis">Frontend Development</h3>
+          <p>I build responsive websites and web applications using modern technologies like React, Bootstrap, and jQuery.</p>
+         </div>
+      </div>
+      <div class="col d-flex align-items-start" bis_skin_checked="1">
+        <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 " bis_skin_checked="1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-database" viewBox="0 0 16 16">
+                <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313M13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A5 5 0 0 0 13 5.698M14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A5 5 0 0 0 13 8.698m0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525"/>
+              </svg>
+        </div>
+        <div bis_skin_checked="1">
+          <h3 class="fs-2 text-body-emphasis">Backend Development</h3>
+          <p>I develop server-side applications using Django, Spring Boot, and PostgreSQL.</p>
+          </div>
+      </div>
+      <div class="col d-flex align-items-start" bis_skin_checked="1">
+        <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 " bis_skin_checked="1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
+                <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
+                <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1M2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1z"/>
+              </svg>
+        </div>
+        <div bis_skin_checked="1">
+          <h3 class="fs-2 text-body-emphasis">Web Design & SEO</h3>
+          <p>I design user-friendly and visually appealing websites and web applications, while optimizing them for search engines to improve their rankings on search engine results pages.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-aos="fade-up" id="skills" class="container text-center my-5">
+    <h2 class="border-bottom">Skills</h2>
+    <div class="row mt-4">
+        <div class="col-6 col-sm-3 skill">
+            <img src="media/svg/html.svg" alt="Html" class="skill-icon">
+            <p>HTML</p>
+        </div>
+        <div class="col-6 col-sm-3 skill">
+            <img src="media/svg/css-3.svg" alt="CSS" class="skill-icon">
+            <p>CSS</p>
+        </div>
+        <div class="col-6 col-sm-3 skill">
+            <img src="media/svg/bootstrap.svg" alt="Bootstrap" class="skill-icon">
+            <p>Bootstrap</p>
+        </div>
+        <div class="col-6 col-sm-3 skill">
+            <img src="media/svg/javascript.svg" alt="JavaScript" class="skill-icon">
+            <p>JavaScript</p>
+        </div>
+        <div class="col-6 col-sm-3 skill">
+            <img src="media/svg/tailwind.svg" alt="Tailwind" class="skill-icon">
+            <p>Tailwind</p>
+        </div>
+        <div class="col-6 col-sm-3 skill">
+            <img src="media/svg/jquery.svg" alt="jQuery" class="skill-icon">
+            <p>jQuery</p>
+        </div>
+        
+        <div class="col-6 col-sm-3 skill">
+            <img src="media/svg/react.svg" alt="React.js" class="skill-icon">
+            <p>React.js</p>
+        </div>
+        <div class="col-6 col-sm-3 skill">
+            <img src="media/svg/django.svg" alt="Django" class="skill-icon">
+            <p>Django</p>
+        </div>
+        <div class="col-6 col-sm-3 skill">
+            <img src="media/svg/spring.svg" alt="Spring" class="skill-icon">
+            <p>Spring</p>
+        </div>
+        <div class="col-6 col-sm-3 skill">
+            <img src="media/svg/git.svg" alt="Git" class="skill-icon">
+            <p>Git</p>
+        </div>
+        <div class="col-6 col-sm-3 skill">
+            <img src="media/svg/github.svg" alt="GitHub" class="skill-icon">
+            <p>GitHub</p>
+        </div>
+        <div class="col-6 col-sm-3 skill">
+            <img src="media/svg/postgresql.svg" alt="PostgreSQL" class="skill-icon">
+            <p>PostgreSQL</p>
+        </div>
+        
+
+    </div>
+</section>
+
+
 <section data-aos="fade-up" id="projects" class="container text-center my-5">
-    <h2>Projects</h2>
+    <h2 class="border-bottom">Projects</h2>
     <div class="row mt-4">
         <div class="col-md-4 mb-3">
             <div class="card project-card">
@@ -161,24 +265,56 @@
     </div>
 </section>
 
-    <section data-aos="fade-up" id="skills" class="container text-center my-5">
-        <h2>Skills</h2>
-        <div class="row mt-4">
-            
-            <div class="col-6 col-sm-3 skill"><i class="fa-brands fa-python"></i><p>Django</p></div>
-            <div class="col-6 col-sm-3 skill"><i class="fa-brands fa-java"></i><p>Spring</p></div>
-            <div class="col-6 col-sm-3 skill"><i class="fa-brands fa-bootstrap"></i><p>Bootstrap</p></div>
-            <div class="col-6 col-sm-3 skill"><i class="fa-brands fa-html5"></i><p>HTML</p></div>
-            <div class="col-6 col-sm-3 skill"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
-            <div class="col-6 col-sm-3 skill"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
-            <div class="col-6 col-sm-3 skill"><i class="fa-brands fa-react"></i><p>React</p></div>
-            <div class="col-6 col-sm-3 skill"><i class="fa-solid fa-database"></i><p>PostgreSQL</p></div>
+    
+
+    <section data-aos="fade-up" id="education">
+        <div class="container px-4 py-5" id="hanging-icons" bis_skin_checked="1">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="text-center border-bottom" style="margin-left: 1.2rem;">Education</h2>
+              <ul class="timeline-3">
+                <li>
+                  <div class="d-flex justify-content-between">
+                    <h6>SOU KOSTA SUSINOV - Radovish</h6>
+                    <p>2016 - 2020</p>
+                  </div>
+                  <p class="mt-2">During my 4 years of high school, I consistently achieved excellent results,
+                     graduating with a perfect GPA of 5.00. This reflects my dedication and commitment to my studies.</p>
+                </li>
+                <li>
+                  <div class="d-flex justify-content-between">
+                    <h6>FCSE</h6>
+                    <p>2020 - Present</p>
+                  </div>
+                  <p class="mt-2">Currently, I am completing my degree in Computer Science. I have successfully completed all courses,
+                     with only one remaining subject before graduation. My studies have provided me with strong knowledge in many areas,
+                     and I am looking forward to finalizing my degree and pursuing a career in Full-Stack Development.</p>
+                </li>
+              </ul>
+            </div>
+          <div class="col-md-6">
+              <h2 class="text-center border-bottom" style="margin-left: 1.2rem;">Employment History</h2>
+              <ul class="timeline-3">
+                <li>
+                  <div class="d-flex justify-content-between">
+                    <h6>Galactic Caffe</h6>
+                    <p>2020 - Present</p>
+                  </div>
+                  <p class="mt-2" style="text-align: left;">Developed and implemented marketing strategies that successfully
+                    attracted new clients and retained regular patrons. Maintained effective
+                    communication with colleagues, clients, and suppliers, resulting in increased
+                    customer satisfaction. Efficiently managed time and resources to ensure the
+                    smooth operation of daily activities.</p>
+                </li>
+            </div>
         </div>
-    </section>
+      </section>
+      
+      
     
     <section data-aos="fade-up" id="contact" class="container my-5">
-    <h2 class="text-center">Contact Me</h2>
-    <div class="row">
+    <h2 class="border-bottom text-center mt-6">Contact Me</h2>
+    <div class="row mt-4">
         <div class="col-md-6 text-md-left contact-info">
             <div class="contact-item my-2">
                 <i class="fa-solid fa-envelope"></i>
@@ -193,6 +329,10 @@
                 <p><a href="https://instagram.com/dj.marsabb" target="_blank">Instagram</a></p>
             </div>
             <div class="contact-item my-2">
+                <i class="fa-brands fa-facebook"></i>
+                <p><a href="https://facebook.com/MarkoSrbakov12/" target="_blank">Facebook</a></p>
+            </div>
+            <div class="contact-item my-2">
                 <i class="fa-brands fa-linkedin"></i>
                 <p><a href="https://mk.linkedin.com/in/marko-srbakov-a65b43235" target="_blank">LinkedIn</a></p>
             </div>
@@ -204,31 +344,47 @@
         <div data-aos="fade-up" class="col-md-6">
             <form action="https://formspree.io/f/moveqjbz" method="POST" class="w-100">
                 <div class="mb-3">
-                  <label for="name" class="form-label">Your Name</label>
-                  <input type="text" class="form-control" id="name" name="name" required>
-                </div>
+                    <p class="font-medium text-gray-600 text-lg">What can I help you with?</p>
+                    
+                    <button type="button" class="btn btn-outline-secondary" onclick="document.getElementById('selectedService').value='Web Design'">Web Design</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="document.getElementById('selectedService').value='Web Development'">Web Development</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="document.getElementById('selectedService').value='Content & SEO'">Content & SEO</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="document.getElementById('selectedService').value='Other'">Other</button>
+                    <input type="hidden" id="selectedService" name="service" value="">
+                  </div>
                 <div class="mb-3">
-                  <label for="surname" class="form-label">Your Surname</label>
-                  <input type="text" class="form-control" id="surname" name="surname" required>
+                  <label for="name" class="form-label">Your Firstname and Lastname</label>
+                  <input type="text" class="form-control" id="fullname" name="fullname" required placeholder="Enter your full name">
                 </div>
+                
+                <div class="mb-3">
+                  <label for="surname" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="number" name="number" required placeholder="Enter your Phone Number">
+                </div>
+                
                 <div class="mb-3">
                   <label for="email" class="form-label">Your Email</label>
-                  <input type="email" class="form-control" id="email" name="email" required>
+                  <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email">
                 </div>
+                
                 <div class="mb-3">
                   <label for="message" class="form-label">Your Message</label>
-                  <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                  <textarea class="form-control" id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
                 </div>
+                
                 <button type="submit" class="btn btn-primary">Send</button>
               </form>
+              
               
         </div>
     </div>
     </section>
-
+   
+    
     
     <footer class="text-center py-3">
         <p>&copy; 2025 Marko Srbakov. All rights reserved.</p>
+        <a class="futer-kopce" href="https://drive.google.com/file/d/1Q5Zn68bILc8UbxH1p2BEI3MOYUxiZ051/view?usp=sharing">Link to my CV</a>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
