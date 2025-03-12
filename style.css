@@ -1,4 +1,5 @@
 /* Dark Mode */
+
 body.dark-mode {
     background-color: #121212;
     color: #ffffff;
@@ -7,6 +8,14 @@ body.dark-mode {
 body.dark-mode .navbar .nav-link,
 body.dark-mode .navbar .navbar-brand {
     color: #ffffff;
+}
+
+body.dark-mode svg {
+    fill: #ffffff; 
+}
+
+body.dark-mode h3 {
+    color: #ffffff !important;
 }
 
 /* Light Mode */
@@ -18,6 +27,14 @@ body.light-mode {
 body.light-mode .navbar .nav-link,
 body.light-mode .navbar .navbar-brand {
     color: #000000;
+}
+
+body.light-mode svg {
+    fill: #000000; 
+}
+
+body.light-mode h3 {
+    color: #000000 !important; 
 }
 
 /* Project Card */
@@ -82,7 +99,7 @@ footer {
 /* Contact Info */
 .contact-info {
     padding: 20px;
-    text-align: left; /* Поради да ги поставиш на левата страна */
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,64 +136,23 @@ footer {
     color: #E4405F;
 }
 
+.contact-item i.fa-facebook {
+    color: #1877F2;
+}
+
+
 .contact-item i.fa-linkedin {
     color: #0077B5;
+}
+
+.contact-item i.fa-brands.fa-git {
+    color: #333;
 }
 
 .contact-item i.fa-github {
     color: #333;
 }
 
-/* Skill Icons */
-.skill i {
-    font-size: 48px;
-    margin-bottom: 10px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 50%;
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.skill p {
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-.skill i.fa-python {
-    color: #306998;
-}
-
-.skill i.fa-java {
-    color: #007396;
-}
-
-.skill i.fa-bootstrap {
-    color: #563d7c;
-}
-
-.skill i.fa-html5 {
-    color: #e34c26;
-}
-
-.skill i.fa-css3-alt {
-    color: #1572b6;
-}
-
-.skill i.fa-js {
-    color: #f7df1e;
-}
-
-.skill i.fa-database {
-    color: #336791;
-}
-
-.skill i.fa-react {
-    color: #61DBFB;
-}
-
-.skill:hover i {
-    box-shadow: 0 0 20px #1ea6db;
-}
 
 /* Smooth Scrolling */
 html {
@@ -186,26 +162,126 @@ html {
 /* Carousel Item */
 .carousel-item img {
     width: 100%;
-    height: 400px; /* Или друга висина што ја сакаш */
-    object-fit: cover; /* За да се осигура сликите да не се извитоперуваат */
+    height: 400px; 
+    object-fit: cover; 
 }
 
 .custom-btn {
-    padding: 12px 12px; /* Повеќе простор од сите страни */
-    border-radius: 4px; /* Мала заобленост на аглите */
-    text-transform: uppercase; /* За да биде текстот во големи букви */
-    font-weight: bold; /* Подебел текст */
+    padding: 12px 12px; 
+    border-radius: 4px; 
+    text-transform: uppercase; 
+    font-weight: bold; 
     display: inline-block;
     text-align: center;
-    width: auto; /* Дава му на копчето нормална ширина */
+    width: auto; 
 }
 
-
 form {
-    text-align: left; /* Лево порамнување на формата */
+    text-align: left; 
 }
 
 button[type="submit"] {
-    text-align: left; /* Поставување на копчето на левата страна */
-    margin-left: 0; /* Уште едно осигурување за лево порамнување */
+    text-align: left; 
+    margin-left: 0; 
+}
+
+/* Education Tajmlajn */
+
+ul.timeline-3 {
+    list-style-type: none;
+    position: relative;
+  }
+  ul.timeline-3:before {
+    content: " ";
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+  }
+  ul.timeline-3 > li {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  ul.timeline-3 > li:before {
+    content: " ";
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+  }
+
+  .gradient-background {
+    background: linear-gradient(64deg,#a116d8,#000000);
+    background-size: 120% 120%;
+    animation: gradient-animation 10s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .futer-kopce {
+     text-decoration: none;  
+  }
+
+  .programming-languages {
+    display: flex;
+    gap: 20px; 
+    align-items: center;
+}
+
+.language-icon {
+    width: 30px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.language-icon:hover {
+    transform: scale(1.1); 
+}
+
+
+/* SKILLS Ikonki */
+.skill img {
+    width: 60px; 
+    height: auto;
+    margin-bottom: 10px;
+}
+.skill-icon:hover {
+    transform: scale(1.1); 
+}
+
+/* Scroll Top kopce */
+.scroll-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-to-top-btn:hover {
+    background-color: #0056b3;
 }
