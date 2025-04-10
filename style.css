@@ -268,20 +268,62 @@ ul.timeline-3 {
 
 /* Scroll Top kopce */
 .scroll-to-top-btn {
-    display: none;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: white;
+    bottom: 30px;
+    right: 30px;
     border: none;
-    padding: 10px 15px;
-    font-size: 20px;
-    cursor: pointer;
     border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50px;
+    height: 50px;
+    display: none; 
+    cursor: pointer;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stilovi za SVG */
+.scroll-to-top-btn svg {
+    width: 100%;
+    height: 100%;
+    fill: #000000; 
+    transition: fill 0.3s ease-in-out; 
+}
+
+body.light-mode .scroll-to-top-btn svg {
+    fill: #000000; 
+}
+
+body.dark-mode .scroll-to-top-btn svg {
+    fill: #ffffff; 
+}
+
+/* Hover eff */
+.scroll-to-top-btn:hover svg {
+    fill: #ff5733; 
 }
 
 .scroll-to-top-btn:hover {
-    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
+
+
+.scroll-to-top-btn.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media (max-width: 768px) {
+    .scroll-to-top-btn {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+
